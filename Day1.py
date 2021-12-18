@@ -1,11 +1,11 @@
 import numpy as np
-import itertools
+import time
+start_time = time.time()
 
-with open('cisla.txt', 'r') as f:
+with open('Day1.txt', 'r') as f:
     data = f.read()
 
 res = [int(i) for i in data.split()]
-
 print(res)
 
 def porovnejVelikost1(data):
@@ -17,14 +17,15 @@ def porovnejVelikost1(data):
             print (pocet)
 
 def porovnejVelikost2(data):
-    pocet = 0
+    pocet1 = 0
     for i in range(len(data)- 3):
         cislo_1 = data[i] + data[i+1] + data[i+2]
         cislo_2 = data[i+1] + data[i+2] + data[i+3]
         if cislo_1 < cislo_2:
-            pocet = pocet + 1
+            pocet1 = pocet1 + 1
             #print(data[i])
-            print (pocet)
+            print (pocet1)
 
-#porovnejVelikost1(res)
+porovnejVelikost1(res)
 porovnejVelikost2(res)
+print(time.time() - start_time)
