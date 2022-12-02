@@ -1,9 +1,11 @@
 j = 0
 seen = {j}
 with open('2018Day1.txt', 'r') as f:
-    res = f.read()
+    for line in f:
+        print(line.strip())
+    """res = f.read()
 
-res = [int(i) for i in res.split('\n')]
+res = [int(i) for i in res.split('\n')]"""
 
 while True:
     for i in res:
