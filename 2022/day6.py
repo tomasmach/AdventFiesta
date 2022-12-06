@@ -1,15 +1,12 @@
 with open('input.txt', 'r') as f:
     data = f.read()
 
-print(data)
 
 def part1(data):
-    for i in data:
-        
+    for i in range(0, len(data)-14):
+        if len(set(data[i: i+14])) == 14:
+            return i + 14
 
-def part2(data):
-    print("part 2")
 
 if __name__ == '__main__':
     print(part1(data))
-    #print(part2(data))
