@@ -1,0 +1,1 @@
+sum(map(["", "B X","C Y","A Z", "A X", "B Y", "C Z", "C X", "A Y", "B Z"].index, open("day2.txt").read().strip().split("\n"))), sum(map(["", "B X","C X","A X", "A Y", "B Y", "C Y", "C Z", "A Z", "B Z"].index, open("day2.txt").read().strip().split("\n")))
