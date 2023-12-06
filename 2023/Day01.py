@@ -1,4 +1,4 @@
-with open('input.txt', 'r') as f:
+with open('2023/input.txt', 'r') as f:
     data = f.read()
     data = data.split()
 
@@ -15,7 +15,6 @@ def part1(data):
             if j.isdigit():
                 break
         number += int(i) * 10 + int(j)
-
     print(number)
 
 def part2(data):
@@ -37,7 +36,6 @@ def part2(data):
             if j.isdigit():
                 break
         number += int(i) * 10 + int(j)
-
     print(number)
 
 part1(data)
